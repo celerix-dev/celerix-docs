@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Celerix Dev Toolbox",
-  description: "High-performance \"Swiss Army Knife\" for your daily development workflow",
+  title: "Celerix",
+  description: "Privacy aware High-performance open source software",
   base: '/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config

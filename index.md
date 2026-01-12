@@ -2,9 +2,9 @@
 layout: home
 
 hero:
-  name: "Celerix Dev Toolbox"
-  text: "Your dev sidekick"
-  tagline: High-performance "Swiss Army Knife" for your daily development workflow
+  name: "Celerix"
+  text: "Applications"
+  tagline: Privacy aware High-performance open source software
   actions:
     - theme: brand
       text: Getting started
