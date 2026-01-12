@@ -6,6 +6,7 @@ export default defineConfig({
   description: "Privacy aware High-performance open source software",
   base: '/',
   themeConfig: {
+    logo: '/assets/celerix-logo.png',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },

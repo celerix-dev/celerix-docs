@@ -2,8 +2,8 @@
 layout: home
 
 hero:
-  name: "Celerix"
-  text: "Applications"
+  name: Celerix
+  text: Applications
   tagline: Privacy aware High-performance open source software
   actions:
     - theme: brand
