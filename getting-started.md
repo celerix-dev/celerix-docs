@@ -4,54 +4,38 @@ outline: deep
 
 # Getting Started with Celerix
 
-Welcome to Celerix. This guide will help you set up the toolbox and explain the core architecture that keeps your data safe and your workflow fast.
-
----
+Welcome to Celerix. This documentation will explain the core architecture that keeps your data safe, your privacy intact, and your workflow fast.
 
 ## 🛡️ The Celerix Philosophy: "Local-First"
 
-Most modern tools rely on the cloud for synchronization and processing. Celerix takes a different path.
+Most modern tools rely on the cloud for synchronization and processing. Celerix takes a different path by keeping your logic where it belongs: on your machine.
 
 **What "Local-First" means for you:**
-* **No Accounts:** You don't need to sign up or log in to use Celerix.
-* **No Telemetry:** We don't track which tools you use or how often you open the app.
-* **Offline by Default:** Every core utility (JSON formatting, Git status, Task management) runs entirely on your CPU without an internet connection.
+* **Zero Accounts:** No sign-ups, no passwords, no "Log in with Google." You own the app, the app doesn't own you.
+* **Privacy by Design:** We don't track which tools you use or how you use them. Your behavior isn't a data point.
+* **True Offline Utility:** Every core utility—from JSON formatting to the Terminal—runs entirely on your hardware. If your internet goes out, Celerix applications keep working.
 
----
+## 🚀 Native Performance, Web Flexibility
 
-## 🚀 Installation
+Celerix is built with a specific technical mission: **High performance without platform silos.**
 
-Celerix is built with **Tauri 2.0**, allowing us to provide native performance on all major platforms with a tiny disk footprint.
+### Why Not Electron?
+While Electron made cross-platform apps easy, it came at a cost: high memory usage and massive binary sizes. We purposely avoided Electron because we believe a developer toolbox shouldn't eat 1GB of RAM just to format a JSON string.
 
-### Windows
-1. Download the latest `.msi` or `setup.exe` from our [Releases](https://github.com/celerix-dev/celerix-dev-toolbox/releases).
-2. Run the installer.
-3. Launch Celerix from your Start Menu.
+### The Best of Both Worlds
+To ensure Celerix is available to everyone—regardless of whether you're on **macOS, Windows, or Linux**—we chose modern, lightweight application frameworks:
 
-### macOS
-1. Download the `.dmg` (Universal or Silicon-specific).
-2. Drag Celerix to your **Applications** folder.
-3. Open Celerix (you may need to right-click and select "Open" for the first launch).
+* **Tauri + Rust:** Used for our high-performance modules (like the Terminal and PTY bridging). It leverages your OS's native webview to keep the footprint tiny while providing the memory safety and speed of Rust.
+* **Wails + Go:** Powering our data-heavy utilities with the efficiency of Go, ensuring that even complex operations feel instantaneous.
 
-### Linux
-1. Download the `.AppImage` or `.deb` package.
-2. Grant execution permissions: `chmod +x Celerix.AppImage`.
-3. Run the application.
-
----
-
-## 🛠️ Your First Look
-
-Once launched, you'll see the **Unified Dashboard**. Here are the three pillars of the Celerix experience:
-
-1. **The Toolbox:** A collection of stateless utilities (Encoders, Formatters, Generators).
-2. **Project Hub:** Link your local Git repositories to see a high-level overview of your work-in-progress across different folders.
-3. **Privacy Kanban:** A simple, markdown-backed task board that stores your "To-Do" list in a local JSON file. No cloud sync, no prying eyes.
-
----
+By using web-based technology for the UI, we ensure a consistent, beautiful experience for every developer, while the native backends (Rust/Go) ensure the app stays "slim and trim."
 
 ## 🔒 Security Verification
 
-Because we believe in **Open Sovereignty**, we encourage you to verify our claims:
-* **Audit the Code:** All logic is open-source at [github.com/celerix-dev](https://github.com/celerix-dev).
-* **Check the Traffic:** Use a tool like Wireshark or Little Snitch while using Celerix. You will see zero outgoing traffic to our servers.
+Because we believe in **Open Sovereignty**, we don't expect you to take our word for it. We encourage you to verify our claims:
+
+* **Audit the Code:** All logic is transparent and open-source at [github.com/celerix-dev](https://github.com/celerix-dev).
+* **Monitor the Wire:** Use tools like Wireshark or Little Snitch while using Celerix. You will see zero outgoing traffic to our servers because we don't have any servers to talk to.
+
+## Next Steps
+Ready to dive in? Check out our **Installation Guide** or jump straight into the **Terminal Setup**.

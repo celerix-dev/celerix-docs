@@ -14,11 +14,11 @@ hero:
       link: /privacy
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Celerix Dev Toolbox
+    details: A high-performance "Swiss Army Knife" for your daily development workflow.
+  - title: Celerix Git
+    details: A high-performance open source Git client, that runs on all major operating systems.  
+  - title: Celerix Docs
+    details: How this documentation is built. A vitepress powered website.
 ---
 
