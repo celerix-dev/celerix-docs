@@ -13,7 +13,7 @@ export default defineConfig({
       { text: 'Dev Toolbox', link: '/dev-toolbox' }
     ],
     editLink: {
-      pattern: 'https://github.com/celerix-dev/docs/edit/main/:path',
+      pattern: 'https://github.com/celerix-dev/edit/main/:path',
       text: 'Edit this page on GitHub'
     },
 
