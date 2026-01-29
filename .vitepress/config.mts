@@ -10,39 +10,49 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Getting Started', link: '/getting-started' }
+      { text: 'Dev Toolbox', link: '/dev-toolbox' }
     ],
+    editLink: {
+      pattern: 'https://github.com/celerix-dev/docs/edit/main/:path',
+      text: 'Edit this page on GitHub'
+    },
 
-    sidebar: [
-      {
-        text: 'Welcome',
-        items: [
-          { text: 'Getting Started', link: '/getting-started' },
-          { text: 'Privacy', link: '/privacy' }
-        ]
-      },
-      {
-        text: 'Dev Toolbox',
-        collapsed: true,
-        items: [
-          { text: 'Introduction', link: '/pages/dev-toolbox/introduction' },
-        ]
-      },
-      {
-        text: 'Git GUI',
-        collapsed: true,
-        items: [
-          { text: 'Introduction', link: '/pages/git-gui/introduction' },
-        ]
-      },
-      {
-        text: 'Celerix Docs',
-        collapsed: true,
-        items: [
-          { text: 'Introduction', link: '/pages/celerix-docs/introduction' },
-        ]
-      }
-    ],
+    sidebar: {
+      '/': [
+        {
+          text: 'Welcome',
+          items: [
+            {text: 'Getting Started', link: '/getting-started'},
+            {text: 'Privacy', link: '/privacy'}
+          ]
+        }],
+      '/dev-toolbox/': [
+        {
+          items: [
+            { text: 'Welcome', link: '/dev-toolbox/' },
+            {text: 'Features', link: '/dev-toolbox/features'},
+          ]
+        },
+      ],
+      '/git-gui/': [
+        {
+          text: 'Git GUI',
+          collapsed: true,
+          items: [
+            {text: 'Introduction', link: '/pages/git-gui/introduction'},
+          ]
+        },
+      ],
+      '/docs/': [
+        {
+          text: 'Celerix Docs',
+          collapsed: true,
+          items: [
+            {text: 'Introduction', link: '/pages/celerix-docs/introduction'},
+          ]
+        }
+      ],
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/celerix-dev' }
