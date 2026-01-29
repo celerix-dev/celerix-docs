@@ -15,7 +15,3 @@ Core Philosophy
 - Privacy: No tracking, no cloud-syncing, no accounts required.
 
 ![Dashboard Screenshot](./assets/celerix-dev-toolbox.png)
-
-### Quick Start
-* [Introduction](./introduction)
-* [Installation Guide](./setup)
